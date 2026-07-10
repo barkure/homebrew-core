@@ -3,8 +3,8 @@ class Gamdl < Formula
 
   desc "Python CLI app for downloading Apple Music songs, music videos and post videos"
   homepage "https://github.com/glomatico/gamdl"
-  url "https://files.pythonhosted.org/packages/63/dc/00ee2132ba0356deb067d2550e927931a43d4070d0ecdd2d33ff8b6486ab/gamdl-3.8.1.tar.gz"
-  sha256 "bd069a580d1b7ff9dc709cf996fe65a0a0731ef83dbe5a0608a182948e91c237"
+  url "https://files.pythonhosted.org/packages/60/83/8d9979d75969a870cdbeae54bb9abfe0517de44810b666627e672b790d85/gamdl-3.8.2.tar.gz"
+  sha256 "6d70c292d9fee33bb36c62edcb559ac29a3a28413c257742fcfb9efc0d4d8b90"
   license "MIT"
 
   bottle do
@@ -16,6 +16,7 @@ class Gamdl < Formula
     sha256 cellar: :any, x86_64_linux:  "dafbb88bbe4b8b86b5f9aa2cf41a78e69bd98e3d7c18ceec93c282d9515670eb"
   end
 
+  depends_on "rust" => :build
   depends_on "certifi" => :no_linkage
   depends_on "libyaml"
   depends_on "pillow" => :no_linkage
@@ -34,8 +35,8 @@ class Gamdl < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/e7/a1/67fe25fac3c7642725500a3f6cfe5821ad557c3abb11c9d20d12c7008d3e/charset_normalizer-3.4.7.tar.gz"
-    sha256 "ae89db9e5f98a11a4bf50407d4363e7b09b31e55bc117b4f7d80aab97ba009e5"
+    url "https://files.pythonhosted.org/packages/bd/2a/23f34ec9d04624958e137efdc394888716353190e75f25dd22c7a2c7a8aa/charset_normalizer-3.4.9.tar.gz"
+    sha256 "673611bbd43f0810bec0b0f028ddeaaa501190339cac411f347ac76917c3ae7b"
   end
 
   resource "click" do
@@ -74,8 +75,8 @@ class Gamdl < Formula
   end
 
   resource "httpx-retries" do
-    url "https://files.pythonhosted.org/packages/fb/f5/046cac13877ce9b55aebdbb3999e0e45b19b989a95c5fd1040fa04bd1f92/httpx_retries-0.5.0.tar.gz"
-    sha256 "d8c8e1e0852d84be3837aba0bcf78aeb89a4b77db95e8cc988c8c058830b3044"
+    url "https://files.pythonhosted.org/packages/e9/d3/b7a8bb09543af40009717a08a2ceba90b6d4c6f0cdf171404217d8f4c37d/httpx_retries-0.6.0.tar.gz"
+    sha256 "3e0b404969a564829d368417964fd21e6b400a10d17c92d29b8bc247ce8186e3"
   end
 
   resource "idna" do
@@ -159,8 +160,8 @@ class Gamdl < Formula
   end
 
   resource "yt-dlp" do
-    url "https://files.pythonhosted.org/packages/88/a4/1b0979d28f87774bb67fbbc66bce44f9dd1aa0e547a99e22985fac945c33/yt_dlp-2026.6.9.tar.gz"
-    sha256 "d50fcb95f48d61bedde33e408c1881d4c279e51c31354a599ce09e96ba0f4b86"
+    url "https://files.pythonhosted.org/packages/47/c5/9972af4b472b0d55badf841ebafd2f98944cb0ae0f46e11d01f363ea5b91/yt_dlp-2026.7.4.tar.gz"
+    sha256 "b094813404f87a9dd2186f00815231df32e5fd8a5403be0f807b3bb2d21a4432"
   end
 
   def install
